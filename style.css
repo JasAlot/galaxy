@@ -1,0 +1,358 @@
+/* Обертка */
+.wrapper{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(2,minmax(200px,1fr));
+    grid-template-rows:repeat(5, 100vh) ;
+}
+
+.wrapper > div{
+    text-align:center;
+}
+
+/* body */
+
+body{
+    color:white;
+    font-family: 'Noto Serif', serif;
+    background-image: url(images/earth.jpg) ;
+    transform:translateY(0);
+    overflow: hidden;
+    margin: 0 ;
+    transition: transform 1s ease;
+}
+
+/* разметка сетки */
+
+
+.wrapper > :nth-child(1){
+    position:relative;
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.wrapper >  :nth-child(2){
+    grid-area: 2 / 1 / 3 / 3;
+    background-image: url(images/4.jpg) ;
+    background-size:100% 100%;
+}
+.wrapper > :nth-child(3){
+    background-image:url(images/78.jpg);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    
+}
+.wrapper > :nth-child(4){
+    background-image:url(images/78.jpg);
+    background-size: 200% 100%;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+.wrapper > :nth-child(5){
+    grid-area: 4 / 1 / 5 / 3;
+    background-image:url(images/9.jpg);
+    background-size:100% 100%;
+}
+.wrapper > :nth-child(6){
+    grid-area: 5 / 1 / 6 / 3;
+    position:relative;
+    background-image:url(images/6.png);
+    background-size:100% 100%;
+}
+
+
+
+/* Header */
+
+.header{
+    
+    position:absolute;
+    width:100%;
+    z-index:1000;
+    transition:color , transform 0.9s ease;
+    display:grid;
+    grid-template-columns: repeat(5,minmax(40px,1fr));
+    grid-template-rows: 50px;
+}
+
+.header::after{
+    content:"";
+    border:1.5px solid rgba(228, 230, 236, 0.3);
+    display:block;
+    margin-left:10%;
+    margin-right:10%;
+    width:480%;
+}
+
+
+.menuTab{
+    font-size:1.2em ;
+    transition:color  1s;
+    margin:0 auto;
+    display:block;
+    width:50%;
+    height:50%;
+    top:35%;
+    transform:translateY(-35%);
+    position:relative;
+    color:rgb(255, 255, 255);
+}
+
+
+.header :hover{
+    color:rgb(122, 121, 121);
+}
+
+
+
+/* logo */ 
+
+
+/* SLIDER START */ /* SLIDER START */ /* SLIDER START */ /* SLIDER START */
+/* layout slider area */
+
+.sliderBlock{
+    font-size:0;
+    width:100%;
+    position:relative;
+}
+
+
+/*  img size */ 
+
+.sliderItem > img{
+    
+    width:100%;
+    height:100%;
+}
+
+
+
+
+/*  viewport    */
+
+
+.viewPort{
+    overflow:hidden;
+    position:relative;
+    width:100%;
+    height:100vh;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+/* slides wrapper */
+
+.sliderItem{
+    position:relative;
+    margin:0;
+    padding:0;
+    display:inline-block;
+    width:100vw;
+    height:100%;
+}
+
+
+.sliderWrapper{
+    box-sizing:border-box;
+    overflow:hidden;
+    position:relative;
+    width:300vw;
+    height:100%;
+    margin:0;
+    padding:0;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+
+.slideText{
+    background-color:rgba(228, 230, 236, 0.3);
+    display:inline-block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    font-size:26px;
+    transform:translate(-50%,-50%);
+}
+
+
+.arrowLeft{
+    text-decoration:none;
+    padding:15px;
+    position:absolute;
+    top:50%;
+    left:0;
+    font-size:50px ;
+    color:rgb(202, 197, 197);
+    transition:background-color 0.8s ease;
+    border-radius: 0 6px 6px 0;
+}
+
+.arrowRight{
+    text-decoration:none;
+    padding:20px;
+    position:absolute;
+    top:50%;
+    right:0;
+    font-size:50px;
+    color:rgb(202, 197, 197);
+    transition:background-color 0.8s ease;
+    border-radius: 6px 0 0 6px;
+}
+
+.arrowLeft:hover , .arrowRight:hover{
+    background-color:hsla(0, 5%, 47%, 0.6)
+}
+
+/* SLIDER END */ /* SLIDER END */ /* SLIDER END */ /* SLIDER END */
+
+
+/* Footer Content start */
+
+.footerContent{
+    position:absolute;
+    width:50vw;
+    height:50vh;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+
+.formHolder{
+
+    position:absolute;
+    top:100%;
+    left:50%;
+    transform:translate(-50%,-100%);
+    display:block;
+    width:100%;
+    margin:0 auto;
+}
+
+
+input{
+    background-color:rgba(34, 20, 2, 0.6);
+    padding-left:15px;
+    box-sizing:border-box;
+    font-size:1.2em;
+    color:white;
+    height:40px;
+    width: 44%;
+    border:2px solid rgb(255, 255, 255);
+    margin-bottom:5px;
+}
+
+.formHolder :nth-child(3){
+    width: 88%;
+}
+
+#buttonCall{
+    background-color:rgba(34, 20, 2, 0.6);
+    font-size:1.2em;
+    color:white;
+    border:2px solid rgb(255, 255, 255);
+    height:45px;
+    width: 88%;
+    transition: background-Color 0.8s ease;
+}
+
+/* Footer Content end */
+
+
+/* page'sTextContent */
+
+.content{
+    position:relative;
+    height:100%;
+    width:100%;
+}
+
+.pageText{
+    position:absolute;
+    height:50%;
+    width:50%;
+    background-color:rgba(34, 20, 2, 0.6);
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+}
+
+.firstHalf {
+    width:50vw;
+    left:50vw;
+    z-index:5;
+}
+
+/*  media */
+
+@media (max-width:650px){
+    .body{font-size:4em;}
+    .header{
+        display:none;
+    }
+
+    .footerContent{
+        width:95vw;
+    }
+    
+    .pageText{
+        width:95vw;
+        height:75vh;
+    }
+
+    
+}
+
+/*  variants for contacts */
+
+
+select{
+    background-color:rgba(34, 20, 2, 0.6);
+    padding-left:15px;
+    box-sizing:border-box;
+    font-size:1.2em;
+    color:white;
+    height:40px;
+    width: 88%;
+    border:2px solid rgb(255, 255, 255);
+    margin-bottom:5px;
+}
+
+/*   icons style */
+.icons{
+    display:inline-block;
+    width:40px;
+    margin:20px 0 0 8px;
+    border-radius:20px;
+    opacity:1;
+    
+}
+
+.iconsA :hover{
+    opacity:0.5;
+}
+
+.iconsWrapper{
+    text-align:center;
+    font-size:1.7em;
+}
+
+
+a{
+    text-decoration: underline;
+    color:#ffffff;
+}
+
+.contacts{
+    font-size:0.6em;
+    
+}

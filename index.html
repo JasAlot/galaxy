@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+ <!--  коментарий  -->
+ <div class="wrapper">
+    <div class="content"  id="content">
+        <div class="header" id="_header">
+            <div class="menuTab" id="MainButton">Главная</div>
+            <div class="menuTab" id="historyButton">История</div>
+            <div class="menuTab">3</div>
+            <div class="menuTab">Услуги</div>
+            <div class="menuTab" id="footerButton">Контакты</div>
+        </div>
+         <!-- Slider start -->
+<div class="sliderBlock"> 
+  
+    <!-- viewPort -->
+    
+    <div class="viewPort">
+      
+      <div class="sliderWrapper" id="sliderWrapper" >
+        <div class="sliderItem" id="sliderItem">
+          <img src="images/earth.jpg">
+          <div class="slideText">
+            Text One
+          </div>
+        </div>
+        <div class="sliderItem" id="sliderItem">
+          <img src="images/2.jpg">
+          <div class="slideText">
+            Text Two
+          </div>
+        </div>
+        <div class="sliderItem" id="sliderItem">
+          <img src="images/3.jpg">
+          <div class="slideText">
+            Text Three
+          </div>
+        </div>
+  
+      </div>
+  
+          <!-- Стрелки -->
+  
+        <a class="arrowLeft" id="arrowLeft">&#10094;</a>
+        <a class="arrowRight" id="arrowRight">&#10095;</a>  
+
+    </div>
+  
+    <!-- Точки -->
+
+    <!-- <div class="dotsWrapper"> 
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div> -->
+  </div>
+  <!-- Slider End -->
+     </div>
+
+      <div class="content">
+        <div class="pageText"> History </div>
+      </div>
+
+      <div class="content">
+        <div class="pageText firstHalf " >FirstHalf</div>
+      </div>
+
+      <div class="content">
+          
+        </div> 
+
+      <div class="content">
+        <div class="pageText">Service</div>
+      </div>
+
+      <div class="content">
+
+        <div class="footerContent">
+          
+          <div class="iconsWrapper">
+                <div>Связаться с нами</div>
+                
+                <div class="contacts">
+                  620110 г.Екатеринбург ул.Чкалова. 252, оф.4 <br/>
+                  e-mail: <a href="#">tatiana76@list.ru</a>
+
+                </div>
+                <a href="#" class="iconsA"><img class="icons" src="Icons/flamp.png"></a>
+                <a href="#" class="iconsA"><img class="icons" src="Icons/vk.png"></a>
+                <a href="#" class="iconsA"><img class="icons" src="Icons/inst.png"></a>
+                
+          </div>
+
+          <form class="formHolder" method="GET"> 
+            <input name="name" required placeholder="Имя*">
+            <input name="number" required  type= "tel" placeholder="Номер*">
+            
+            <select name="selection" >
+                <option  value="НеВыбрано" hidden>
+                  Что вас интересует?
+                </option>
+                <option value="ЖН_покупка">
+                  Жилая недвижимость - покупка
+                </option>
+  
+                <option value="ЖН_продажа">
+                  Жилая недвижимость - продажа
+                </option>
+                
+                <option value="ЖН_ипотека">
+                  Жилая недвижимость - ипотека
+                </option>
+                
+                <option value="ЖН_новостройка">
+                  Жилая недвижимость - новостройки
+                </option>
+                
+                <option value="КН_аренда">
+                  Коммерческая недвижимость - аренда
+                </option>
+                        
+                <option value="КН_покупка">
+                  Коммерческая недвижимость - покупка
+                </option>
+
+                <option value="КН_продажа">
+                  Коммерческая недвижимость - продажа
+                </option>
+
+                <option value="КН_ипотека">
+                  Коммерческая недвижимость - ипотека
+                </option>
+              </select>
+            <button id="buttonCall" href="#" type="submit">Перезвонить Вам</button>
+
+            
+          </form>
+        </div>
+      </div>
+
+ </div>
+
+
+
+<script src="scripts.js"></script>
+</body>
+</html>
